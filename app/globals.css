@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-background: #050505;
+  --color-surface: #121215;
+  --color-primary: #ff003c;
+  --color-primary-variant: #ff2a5f;
+  --font-sans: var(--font-inter), sans-serif;
+  --font-brand: var(--font-poppins), sans-serif;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-variant));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
